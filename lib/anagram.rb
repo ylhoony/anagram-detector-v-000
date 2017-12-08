@@ -13,7 +13,7 @@ class Anagram
     # end
     # result
 
-    random_words.select { |random_word| random_word.chars.sort.join == self.word.chars.sort.join }
+    random_words.select { |random_word| random_word.chars.sort == @name.chars.sort }
   end
 
 end
